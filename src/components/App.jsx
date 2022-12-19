@@ -2,6 +2,7 @@ import React, { lazy } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import SharedLayout from './SharedLayout';
 import { Box } from './Box';
+import BackToTop from './BackToTop';
 
 const Home = lazy(() => import('pages/Home'));
 const Movies = lazy(() => import('pages/Movies'));
@@ -24,6 +25,7 @@ const App = () => {
         </Route>
         <Route path="*" element={<NotFound />} />
       </Routes>
+      <BackToTop />
     </Box>
   );
 };

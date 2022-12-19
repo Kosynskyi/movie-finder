@@ -1,6 +1,7 @@
 import React from 'react';
+import { FcHome } from 'react-icons/fc';
 import { Box } from 'components/Box';
-import { Text } from './NotFound.styled';
+import { Text, StyledBackHome } from './NotFound.styled';
 
 const NotFound = () => {
   return (
@@ -13,6 +14,10 @@ const NotFound = () => {
     >
       <Text>404</Text>
       <Text>page not found :(</Text>
+      <StyledBackHome to="/">
+        <FcHome />
+        Back to Home
+      </StyledBackHome>
     </Box>
   );
 };
