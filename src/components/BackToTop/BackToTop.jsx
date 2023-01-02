@@ -10,10 +10,8 @@ const BackToTop = () => {
     window.addEventListener('scroll', () => {
       if (window.scrollY > 100) {
         setBackToTop(true);
-        console.log('true');
       } else {
         setBackToTop(false);
-        console.log('false');
       }
     });
   }, []);

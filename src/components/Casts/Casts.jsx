@@ -26,20 +26,18 @@ const Casts = () => {
       <List>
         {castAndCrew.cast.map(({ cast_id, profile_path, name, character }) => (
           <li key={cast_id}>
-            <img
-              src={`https://image.tmdb.org/t/p/original${profile_path}`}
-              alt={name}
-              width="80"
-            />
-            <ActorName>
-              <ActorLinkWikipedia
-                href={`https://en.wikipedia.org/wiki/${name}`}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {name}
-              </ActorLinkWikipedia>
-            </ActorName>
+            <ActorLinkWikipedia
+              href={`https://en.wikipedia.org/wiki/${name}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src={`https://image.tmdb.org/t/p/original${profile_path}`}
+                alt={name}
+                width="80"
+              />
+              <ActorName>{name}</ActorName>
+            </ActorLinkWikipedia>
             <Text>
               <Span>Character:</Span> {character}
             </Text>

@@ -3,6 +3,7 @@ import { breakpoints } from '../../services/mixins/mixins';
 import { Link, NavLink } from 'react-router-dom';
 
 export const Wrapper = styled.div`
+  position: relative;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
@@ -25,7 +26,23 @@ export const StyledLinkGoBack = styled(Link)`
 `;
 
 export const Image = styled.img`
-  /* margin-right: ${p => p.theme.space[4]}px; */
+  /* position: relative; */
+`;
+
+export const ButtonIcon = styled.button`
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 25px;
+  padding: ${p => p.theme.space[1]}px;
+  cursor: pointer;
+  border: ${p => p.theme.borders.none};
+  background-color: transparent;
+  transition: 500ms;
+
+  &:hover {
+    transform: scale(1.15);
+  }
 `;
 
 export const Title = styled.h2`

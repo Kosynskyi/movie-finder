@@ -40,3 +40,10 @@ export const getMovieReviewById = async movieId => {
   );
   return response.data.results;
 };
+
+//* @returns the movie video */
+export const getMovieVideo = async movieId => {
+  const { data } = await axios(`/movie/${movieId}/videos?api_key=${API_KEY}`);
+
+  return data.results;
+};
