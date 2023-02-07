@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import ReactPlayer from 'react-player/youtube';
 import { breakpoints } from '../../services/mixins/mixins';
 import { Link, NavLink } from 'react-router-dom';
 
@@ -10,6 +11,17 @@ export const Wrapper = styled.div`
 
   @media ${breakpoints.minTablet} {
     flex-direction: row;
+  }
+`;
+
+export const StyledReactPlayer = styled(ReactPlayer)`
+  @media ${breakpoints.maxMobile} {
+    width: '80vw';
+  }
+
+  @media ${breakpoints.minTablet} {
+    max-width: 50vw;
+    height: auto;
   }
 `;
 

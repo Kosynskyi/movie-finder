@@ -1,5 +1,4 @@
 import React, { Suspense } from 'react';
-import ReactPlayer from 'react-player/youtube';
 import { useEffect, useState } from 'react';
 import { useParams, useLocation, Outlet } from 'react-router-dom';
 import { BiArrowBack } from 'react-icons/bi';
@@ -22,6 +21,7 @@ import {
   AdditionalItem,
   Wrapper,
   ButtonIcon,
+  StyledReactPlayer,
 } from './MovieDetails.styled';
 
 const MovieDetails = () => {
@@ -81,9 +81,10 @@ const MovieDetails = () => {
         <Box>
           {isOpenModal && (
             <Modal closeModal={closeModal}>
-              <ReactPlayer
+              <StyledReactPlayer
                 url={`https://www.youtube.com/watch?v=${trailerKey}`}
                 controls={true}
+                width="80vw"
               />
             </Modal>
           )}
