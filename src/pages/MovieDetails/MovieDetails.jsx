@@ -83,7 +83,6 @@ const MovieDetails = () => {
             <Modal closeModal={closeModal}>
               <ReactPlayer
                 url={`https://www.youtube.com/watch?v=${trailerKey}`}
-                width="80vw"
                 controls={true}
               />
             </Modal>

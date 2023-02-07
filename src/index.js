@@ -8,7 +8,7 @@ import App from 'components/App';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter basename="/movie-finder/">
+    <BrowserRouter basename="/movie-finder">
       <ThemeProvider theme={theme}>
         <App />
       </ThemeProvider>
