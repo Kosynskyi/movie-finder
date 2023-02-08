@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+// import { useTheme } from 'styled-components';
+
 import { Link } from 'react-router-dom';
 
 export const MainTitle = styled.h1`
@@ -46,10 +48,11 @@ export const StyledLink = styled(Link)`
   border-radius: ${p => p.theme.radii.normal};
   border: ${p => p.theme.borders.none};
   color: ${p => p.theme.colors.white};
+  background-color: ${p => p.theme.colors.black};
+
   transition: 500ms;
 
   &:hover {
-    /* background-color: ${p => p.theme.colors.effect}; */
     color: ${p => p.theme.colors.red};
     box-shadow: 0 0 50px #8500ff;
     -webkit-box-reflect: below 10px linear-gradient(transparent, #00000045);

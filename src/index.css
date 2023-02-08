@@ -1,5 +1,9 @@
 /* @import-normalize; bring in normalize.css styles */
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   min-height: 100vh;
   margin: 0;
@@ -8,8 +12,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: white;
   line-height: 1.5;
+  color: white;
   background-color: #141414;
   scroll-behavior: smooth;
 }
@@ -17,4 +21,17 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* dark-theme */
+
+body[data-theme='dark'] {
+  background-color: #141414;
+  color: '#fff';
+}
+
+/* light-theme */
+body[data-theme='light'] {
+  background-color: #c3c3c3;
+  color: #141414;
 }
