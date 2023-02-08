@@ -1,6 +1,4 @@
 import styled from 'styled-components';
-// import { useTheme } from 'styled-components';
-
 import { Link } from 'react-router-dom';
 
 export const MainTitle = styled.h1`

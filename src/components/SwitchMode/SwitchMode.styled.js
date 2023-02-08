@@ -14,8 +14,8 @@ const rotate = keyframes`
 `;
 
 export const ModeBtn = styled.button`
-  margin: 0;
-  padding: 0;
+  margin: ${p => p.theme.space[1]}px;
+  padding: ${p => p.theme.space[1]}px;
   flex-shrink: 0;
   border: none;
   background-color: transparent;

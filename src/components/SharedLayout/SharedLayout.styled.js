@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 
 export const StyledNavLink = styled(NavLink)`
-  min-width: 45%;
+  min-width: 40%;
   padding: ${p => p.theme.space[3]}px;
   padding-top: ${p => p.theme.space[5]}px;
   padding-bottom: ${p => p.theme.space[5]}px;
